@@ -1,4 +1,37 @@
 # IP address dari server
+
+'''
+untuk terkoneksi dengan mysql secara remote, bisa digunakan command berikut:
+mysql -u python-user -h <ip> -P <port> -p
+> masukkan passwordnya
+
+
+* insert
+
+INSERT INTO table_name VALUES (column1_value, column2_value, column3_value, ...);
+
+INSERT INTO logins(username, password) VALUES('administrator', 'adm1n_p@ss');
+
+INSERT INTO logins(username, password) VALUES ('john', 'john123!'), ('tom', 'tom123!');
+
+* ALTER
+
+ALTER TABLE logins ADD newColumn INT;
+
+ALTER TABLE logins RENAME COLUMN newColumn TO oldColumn;
+
+ALTER TABLE logins MODIFY oldColumn DATE;
+
+ALTER TABLE logins DROP oldColumn;
+
+* Update
+
+UPDATE table_name SET column1=newvalue1, column2=newvalue2, ... WHERE <condition>;
+UPDATE logins SET password = 'change_password' WHERE id > 1;
+
+
+
+'''
 HOST = "192.168.122.176"
 DATABASE = "data_db"
 USER = "python-user"
